@@ -9,8 +9,9 @@ namespace Mathmagician
 {
     public class NaturalNumbers
     {
-        //No one can change this
-        private int first;
+        //No one can change "private"
+        // Need to change "private" to "protected" inorder to change the variable in EvenNumbers
+        protected int first;
 
         /* Constructor. 
         Shares the same name as the method of a class. 
@@ -21,7 +22,8 @@ namespace Mathmagician
             first = 1;
         }
 
-        public int GetNext(int x)
+        //added "virtual" for "override" in EvenNumbers
+        public virtual int GetNext(int x)
         {
             return x + 1;
         }
