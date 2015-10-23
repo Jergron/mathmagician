@@ -13,6 +13,9 @@ namespace Mathmagician
         // Need to change "private" to "protected" inorder to change the variable in EvenNumbers
         protected int first;
 
+        //refactoring 
+        protected int increment;
+
         /* Constructor. 
         Shares the same name as the method of a class. 
         Do not have return types. */
@@ -20,12 +23,13 @@ namespace Mathmagician
         {
             //internal data method
             first = 1;
+            increment = 1;
         }
 
         //added "virtual" for "override" in EvenNumbers
         public virtual int GetNext(int x)
         {
-            return x + 1;
+            return x + increment;
         }
 
         public int GetFirst()
