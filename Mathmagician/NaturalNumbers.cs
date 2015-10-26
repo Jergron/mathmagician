@@ -16,6 +16,8 @@ namespace Mathmagician
         //refactoring 
         protected int increment;
 
+        protected int last;
+
         /* Constructor. 
         Shares the same name as the method of a class. 
         Do not have return types. */
@@ -37,7 +39,8 @@ namespace Mathmagician
             return first;
         }
 
-        public int[] GetSequence()
+
+        public int[] GetSequence()  
         {
             return GetSequence(10);
         }
@@ -48,7 +51,7 @@ namespace Mathmagician
             output.Add(GetFirst());
             while (output.Count < length)
             {
-                //give me the last thing on the list = output.Last()
+                 // give me the last thing on the list = output.Last()
                 // give me the next number on the next sequence = GetNext(output.Last())
                 // adds the output into the list = output.Add(GetNext(output.Last()));
                 output.Add(GetNext(output.Last()));

@@ -13,5 +13,5 @@ namespace Mathmagician
         {
             increment = 2;
         }
-    }
+    }   
 }
