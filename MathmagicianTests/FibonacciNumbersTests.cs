@@ -28,8 +28,8 @@ namespace MathmagicianTests
         public void FibonacciShouldPrintNextNumber()
         {
             FibonacciNumbers fib = new FibonacciNumbers();
-            int input = 5;
-            int expected = 5;
+            int input = 1;
+            int expected = 1;
             int actual = fib.GetNext(input);
             Assert.AreEqual(expected, actual);
         }
